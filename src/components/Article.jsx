@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 const Article = ({ newsData: { thumbnail, headline } }) => {
 
     return (
-        <div>
-            <img src={thumbnail} />
+        <div className="row d-flex container-fluid align-items-center justify-content-center" align="center">
+            <img src={thumbnail} className="img-thumbnail ${styles.max-width:20%}" />
             <h4>{headline}</h4>
         </div>
+
     )
 }
 

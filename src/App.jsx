@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import NewsPage from "./components/NewsPage";
 import { getNewsData } from "./utils/newsDataService";
+import "./App.css";
 
-const App = () => {
+function App() {
 
   const [news, setNews] = useState([]);
 

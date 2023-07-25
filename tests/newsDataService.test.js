@@ -15,7 +15,7 @@ describe('getNews tests', () => {
             //Act
             await getNewsData();
             //Assert
-            expect(axios.get).toHaveBeenCalledWith(`http://localhost:3000/mockApiResponse`);
+            expect(axios.get).toHaveBeenCalledWith(`https://content.guardianapis.com/search?order-by=newest&show-fields=byline%2Cthumbnail%2Cheadline%2CbodyText&api-key=fcd8ff4c-bf53-4265-ad55-f1677a6c75b9`);
 
         });
 

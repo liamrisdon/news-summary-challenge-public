@@ -12,9 +12,6 @@ const NewsPage = ({ newsData }) => {
     )
 }
 
-NewsPage.defaultProps = {
-    newsData: [],
-}
 
 NewsPage.propTypes = {
     newsData: PropTypes.arrayOf(

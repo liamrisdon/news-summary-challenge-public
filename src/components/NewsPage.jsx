@@ -12,13 +12,13 @@ const NewsPage = ({ newsData }) => {
     )
 }
 
-FrontNewsPage.defaultProps = {
+NewsPage.defaultProps = {
     newsData: [],
 }
 
-FrontNewsPage.propTypes = {
+NewsPage.propTypes = {
     newsData: PropTypes.arrayOf(
-        PropTypes.object,
+        PropTypes.object
     )
 }
 

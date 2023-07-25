@@ -10,8 +10,8 @@ const Article = ({ newsData: { thumbnail, headline } }) => {
     )
 }
 
-Article.PropTypes = {
-    newsData: PropTypes.exact({
+Article.propTypes = {
+    newsData: PropTypes.shape({
         thumbnail: PropTypes.string.isRequired,
         headline: PropTypes.string.isRequired
     })
